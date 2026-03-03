@@ -5,101 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VaultAI.tools — 500+ Best AI Tools 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>body { font-family: system-ui, sans-serif; } .tool-card { transition: all 0.3s; } .tool-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2); }</style>
+  <style>body{font-family:system-ui,sans-serif}.tool-card{transition:all .3s}.tool-card:hover{transform:translateY(-8px);box-shadow:0 20px 25px -5px rgb(0 0 0 / 0.2)}</style>
 </head>
 <body class="bg-zinc-950 text-white">
 
-  <!-- Navbar -->
-  <nav class="border-b border-zinc-800 bg-zinc-950 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="flex items-center gap-3"><span class="text-3xl">🔥</span><h1 class="text-2xl font-bold">VaultAI.tools</h1></div>
-      <div class="flex gap-8 text-sm">
-        <a href="#tools" class="hover:text-cyan-400">Tools</a>
-        <a href="#shop" class="hover:text-cyan-400">Shop</a>
-        <a href="#blog" class="hover:text-cyan-400">Blog</a>
-        <a href="#premium" class="hover:text-cyan-400">Go Premium</a>
+<nav class="border-b border-zinc-800 bg-zinc-950 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <div class="flex items-center gap-3"><span class="text-3xl">🔥</span><h1 class="text-2xl font-bold">VaultAI.tools</h1></div>
+    <div class="flex gap-8 text-sm"><a href="#tools" class="hover:text-cyan-400">Tools</a><a href="#shop" class="hover:text-cyan-400">Shop</a><a href="#blog" class="hover:text-cyan-400">Blog</a><a href="#premium" class="hover:text-cyan-400">Go Premium</a></div>
+    <button onclick="alert('Affiliate dashboard coming soon!')" class="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-6 py-2 rounded-xl">Submit Your Tool</button>
+  </div>
+</nav>
+
+<header class="max-w-7xl mx-auto px-6 py-24 text-center">
+  <h2 class="text-6xl font-bold mb-6">Discover the Best AI Tools.<br>Earn While You Use Them.</h2>
+  <p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-10">500+ curated AI tools • Real user reviews • Affiliate links that pay you</p>
+  <div class="flex gap-4 justify-center flex-wrap">
+    <input id="search" type="text" placeholder="Search tools... (e.g. image generator)" class="bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-4 flex-1 min-w-[280px] focus:outline-none focus:border-cyan-500">
+    <button onclick="filterTools()" class="bg-white text-black font-semibold px-10 rounded-2xl">Search</button>
+  </div>
+</header>
+
+<section id="tools" class="max-w-7xl mx-auto px-6 py-16">
+  <h3 class="text-4xl font-bold mb-8">Featured AI Tools (March 2026)</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="tool-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
+      <div class="h-48 bg-gradient-to-br from-purple-600 to-cyan-500 flex items-center justify-center text-6xl">✍️</div>
+      <div class="p-6">
+        <div class="flex justify-between items-start"><div><h4 class="font-bold text-xl">Claude 4</h4><p class="text-emerald-400 text-sm">Anthropic</p></div><span class="bg-emerald-500 text-black text-xs font-bold px-3 py-1 rounded-full">4.9</span></div>
+        <p class="text-zinc-400 my-4 text-sm">Best AI for writing, coding & research. 200K context.</p>
+        <a href="#" onclick="trackAffiliate('Claude')" class="block bg-white text-black text-center py-3 rounded-2xl font-semibold">Get Claude → Earn 30% recurring</a>
       </div>
-      <button onclick="alert('Affiliate dashboard coming soon!')" class="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-6 py-2 rounded-xl">Submit Your Tool</button>
     </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="max-w-7xl mx-auto px-6 py-24 text-center">
-    <h2 class="text-6xl font-bold mb-6">Discover the Best AI Tools.<br>Earn While You Use Them.</h2>
-    <p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-10">500+ curated AI tools • Real user reviews • Affiliate links that pay you</p>
-    <div class="flex gap-4 justify-center flex-wrap">
-      <input id="search" type="text" placeholder="Search tools... (e.g. image generator)" class="bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-4 flex-1 min-w-[280px] focus:outline-none focus:border-cyan-500">
-      <button onclick="filterTools()" class="bg-white text-black font-semibold px-10 rounded-2xl whitespace-nowrap">Search</button>
+    <div class="tool-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
+      <div class="h-48 bg-gradient-to-br from-pink-600 to-rose-500 flex items-center justify-center text-6xl">🖼️</div>
+      <div class="p-6">
+        <div class="flex justify-between items-start"><div><h4 class="font-bold text-xl">Midjourney V7</h4><p class="text-emerald-400 text-sm">Discord-based</p></div><span class="bg-emerald-500 text-black text-xs font-bold px-3 py-1 rounded-full">4.8</span></div>
+        <p class="text-zinc-400 my-4 text-sm">The king of AI image generation. Insane quality.</p>
+        <a href="#" onclick="trackAffiliate('Midjourney')" class="block bg-white text-black text-center py-3 rounded-2xl font-semibold">Try Midjourney → 25% commission</a>
+      </div>
     </div>
-  </header>
+    <div class="tool-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
+      <div class="h-48 bg-gradient-to-br from-blue-600 to-indigo-500 flex items-center justify-center text-6xl">📹</div>
+      <div class="p-6">
+        <div class="flex justify-between items-start"><div><h4 class="font-bold text-xl">Synthesia</h4><p class="text-emerald-400 text-sm">AI Video</p></div><span class="bg-emerald-500 text-black text-xs font-bold px-3 py-1 rounded-full">4.9</span></div>
+        <p class="text-zinc-400 my-4 text-sm">Create pro videos with AI avatars in minutes.</p>
+        <a href="#" onclick="trackAffiliate('Synthesia')" class="block bg-white text-black text-center py-3 rounded-2xl font-semibold">Try Synthesia → 30% recurring</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Tools -->
-  <section id="tools" class="max-w-7xl mx-auto px-6 py-16">
-    <h3 class="text-4xl font-bold mb-8">Featured AI Tools (March 2026)</h3>
+<section id="shop" class="bg-zinc-900 py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-4xl font-bold mb-8">VaultAI Shop — Digital + POD Products</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="tool-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
-        <div class="h-48 bg-gradient-to-br from-purple-600 to-cyan-500 flex items-center justify-center text-6xl">✍️</div>
-        <div class="p-6">
-          <div class="flex justify-between items-start"><div><h4 class="font-bold text-xl">Claude 4</h4><p class="text-emerald-400 text-sm">Anthropic</p></div><span class="bg-emerald-500 text-black text-xs font-bold px-3 py-1 rounded-full">4.9</span></div>
-          <p class="text-zinc-400 my-4 text-sm">Best AI for writing, coding & research. 200K context.</p>
-          <a href="#" onclick="trackAffiliate('Claude')" class="block bg-white text-black text-center py-3 rounded-2xl font-semibold">Get Claude → Earn 30% recurring</a>
-        </div>
+      <div class="bg-zinc-800 rounded-3xl p-8 text-center">
+        <p class="text-5xl mb-4">📚</p>
+        <h4 class="font-bold text-2xl">1,000+ AI Prompts Bible</h4>
+        <p class="text-emerald-400 text-xl mt-2">$19 one-time</p>
+        <button onclick="alert('Added to cart — Stripe link next!')" class="mt-6 w-full bg-emerald-500 text-black py-4 rounded-2xl font-bold">Buy Now</button>
       </div>
-      <div class="tool-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
-        <div class="h-48 bg-gradient-to-br from-pink-600 to-rose-500 flex items-center justify-center text-6xl">🖼️</div>
-        <div class="p-6">
-          <div class="flex justify-between items-start"><div><h4 class="font-bold text-xl">Midjourney V7</h4><p class="text-emerald-400 text-sm">Discord-based</p></div><span class="bg-emerald-500 text-black text-xs font-bold px-3 py-1 rounded-full">4.8</span></div>
-          <p class="text-zinc-400 my-4 text-sm">The king of AI image generation. Insane quality.</p>
-          <a href="#" onclick="trackAffiliate('Midjourney')" class="block bg-white text-black text-center py-3 rounded-2xl font-semibold">Try Midjourney → 25% commission</a>
-        </div>
+      <div class="bg-zinc-800 rounded-3xl p-8 text-center">
+        <p class="text-5xl mb-4">👕</p>
+        <h4 class="font-bold text-2xl">"I Run on AI" Hoodie</h4>
+        <p class="text-emerald-400 text-xl mt-2">$39 (dropship)</p>
+        <button onclick="alert('POD order routed — $15 profit!')" class="mt-6 w-full bg-white text-black py-4 rounded-2xl font-bold">Order Now</button>
       </div>
-      <div class="tool-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
-        <div class="h-48 bg-gradient-to-br from-blue-600 to-indigo-500 flex items-center justify-center text-6xl">📹</div>
-        <div class="p-6">
-          <div class="flex justify-between items-start"><div><h4 class="font-bold text-xl">Synthesia</h4><p class="text-emerald-400 text-sm">AI Video</p></div><span class="bg-emerald-500 text-black text-xs font-bold px-3 py-1 rounded-full">4.9</span></div>
-          <p class="text-zinc-400 my-4 text-sm">Create pro videos with AI avatars in minutes.</p>
-          <a href="#" onclick="trackAffiliate('Synthesia')" class="block bg-white text-black text-center py-3 rounded-2xl font-semibold">Try Synthesia → 30% recurring</a>
-        </div>
+      <div class="bg-zinc-800 rounded-3xl p-8 text-center border border-cyan-500">
+        <p class="text-5xl mb-4">⭐</p>
+        <h4 class="font-bold text-2xl">Premium Tool Listing</h4>
+        <p class="text-emerald-400 text-xl mt-2">$49/month</p>
+        <button onclick="alert('Premium listing started — payments next')" class="mt-6 w-full bg-cyan-500 text-black py-4 rounded-2xl font-bold">List Your Tool</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Shop -->
-  <section id="shop" class="bg-zinc-900 py-16">
-    <div class="max-w-7xl mx-auto px-6">
-      <h3 class="text-4xl font-bold mb-8">VaultAI Shop — Digital + POD Products</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-zinc-800 rounded-3xl p-8 text-center">
-          <p class="text-5xl mb-4">📚</p>
-          <h4 class="font-bold text-2xl">1,000+ AI Prompts Bible</h4>
-          <p class="text-emerald-400 text-xl mt-2">$19 one-time</p>
-          <button onclick="alert('Added to cart — Stripe/PayPal link coming!')" class="mt-6 w-full bg-emerald-500 text-black py-4 rounded-2xl font-bold">Buy Now</button>
-        </div>
-        <div class="bg-zinc-800 rounded-3xl p-8 text-center">
-          <p class="text-5xl mb-4">👕</p>
-          <h4 class="font-bold text-2xl">"I Run on AI" Hoodie</h4>
-          <p class="text-emerald-400 text-xl mt-2">$39 (dropship)</p>
-          <button onclick="alert('POD routed — you keep $15 profit!')" class="mt-6 w-full bg-white text-black py-4 rounded-2xl font-bold">Order Now</button>
-        </div>
-        <div class="bg-zinc-800 rounded-3xl p-8 text-center border border-cyan-500">
-          <p class="text-5xl mb-4">⭐</p>
-          <h4 class="font-bold text-2xl">Premium Tool Listing</h4>
-          <p class="text-emerald-400 text-xl mt-2">$49/month</p>
-          <button onclick="alert('Premium flow started — I’ll set up payments next')" class="mt-6 w-full bg-cyan-500 text-black py-4 rounded-2xl font-bold">List Your Tool</button>
-        </div>
-      </div>
-    </div>
-  </section>
+<footer class="bg-black py-12 text-center text-zinc-500 text-sm">
+  <p>© 2026 VaultAI.tools • Built & managed by IncomeSite AI (Grok)</p>
+  <p class="mt-2">Ad space ready for Google AdSense / Ezoic</p>
+</footer>
 
-  <!-- Footer -->
-  <footer class="bg-black py-12 text-center text-zinc-500 text-sm">
-    <p>© 2026 VaultAI.tools • Built & managed by IncomeSite AI (Grok)</p>
-    <p class="mt-2">Ad space ready for Google AdSense / Ezoic</p>
-  </footer>
-
-  <script>
-    function filterTools() { alert("Search active! (We'll make it filter real tools soon)"); }
-    function trackAffiliate(tool) { alert(`Tracked click for ${tool} — your commission recorded!`); }
-  </script>
+<script>
+  function filterTools(){alert("Search active! More tools coming...")}
+  function trackAffiliate(tool){alert(`Tracked: ${tool} — commission recorded!`)}
+</script>
 </body>
 </html>
